@@ -18,6 +18,6 @@ data class Task(
     var isDone : Boolean = false,
 
     @ColumnInfo
-    var data : Date? = null
+    var data : Long? = null
 
 )

@@ -20,7 +20,7 @@ interface TaskDao {
     fun deleteTask(task: Task)
 
     @Query("SELECT * FROM Task")
-    fun getAllTasks(task: Task):List<Task>
+    fun getAllTasks():List<Task>
 
     @Query("SELECT * FROM Task WHERE data = :date")
     fun getTasksByDate(date : Date):List<Task>
