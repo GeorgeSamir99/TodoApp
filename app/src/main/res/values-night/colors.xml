@@ -4,11 +4,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primary_color">#5D9BEA</color>
-    <color name="on_primary_color">@color/white</color>
+    <color name="on_primary_color">#FDFDFD</color>
     <color name="secondary">#5D9BEA</color>
     <color name="onSecondary">@color/white</color>
-    <color name="background_color">#DFECDB</color>
-    <color name="onBackground">@color/black</color>
-    <color name="gray_color">#C8C9CB</color>
+    <color name="background_color">#060E1E</color>
+    <color name="onBackground">@color/white</color>
 
 </resources>
