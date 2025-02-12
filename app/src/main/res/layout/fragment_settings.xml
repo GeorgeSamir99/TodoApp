@@ -1,6 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/view_top_blue_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        android:background="@color/primary_color"
+        />
+    <View
+        android:id="@+id/view_bottom_blue_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/view_top_blue_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        android:background="@color/primary_color"
+        />
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/view_top_blue_bg"
+        android:text="@string/settings"
+        android:layout_marginHorizontal="18dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
 
+    <TextView
+        android:id="@+id/language_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/language"
+        android:textSize="24sp"
+        android:textStyle="bold"
+       app:layout_constraintTop_toBottomOf="@id/view_bottom_blue_bg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/languages_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:drawSelectorOnTop="true"
+        app:boxBackgroundColor="@color/background_color"
+        app:boxStrokeColor="@color/primary_color"
+        app:layout_constraintTop_toBottomOf="@id/language_tv"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTV_languages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="@string/english"
+            android:textColor="@color/primary_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/mode_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/mode"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/languages_til" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mode_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:boxBackgroundColor="@color/background_color"
+        android:drawSelectorOnTop="true"
+
+        app:boxStrokeColor="@color/primary_color"
+        app:layout_constraintTop_toBottomOf="@id/mode_tv"
+       >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTV_modes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="@string/light"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

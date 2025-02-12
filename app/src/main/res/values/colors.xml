@@ -10,5 +10,7 @@
     <color name="background_color">#DFECDB</color>
     <color name="onBackground">@color/black</color>
     <color name="gray_color">#C8C9CB</color>
+    <color name="red_color">#ff5722</color>
+    <color name="green_color">#61E757</color>
 
 </resources>

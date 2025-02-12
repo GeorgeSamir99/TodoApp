@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.devtools.ksp")
+    alias(libs.plugins.kotlin.parcelize)
+
 }
 
 android {
@@ -40,6 +42,7 @@ android {
 
 dependencies {
 
+    implementation (libs.swipelayout)
     implementation(libs.calendar.view)
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)

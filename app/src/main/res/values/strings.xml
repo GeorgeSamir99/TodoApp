@@ -3,4 +3,24 @@
     <string name="tasks_list">tasks_list</string>
     <string name="settings">settings</string>
     <string name="to_do_list">To Do List</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="title">Please enter title\n</string>
+    <string name="description">Please enter descripation</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
+    <string name="language">language</string>
+    <string name="mode">mode\n</string>
+    <string name="light">light</string>
+    <string name="english">english</string>
+    <string name="edit_task">Edit task</string>
+    <string name="enter_new_title">enter new title</string>
+    <string name="enter_new_description">enter new description</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="invalid_title">Invalid title</string>
+    <string name="invalid_description">Invalid description</string>
+    <string name="require">require</string>
+    <string-array name="mode_List">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
 </resources>
